@@ -21,6 +21,6 @@ public class Finish : MonoBehaviour
             return;
 
         UiManager.Instance.ShowNotiText($"You Win!\nPoints: {p.Point}");
-
+        UiManager.Instance.ShowHideRestartButton(true);
     }
 }
