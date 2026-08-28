@@ -26,14 +26,14 @@ public class Trees : MonoBehaviour
         if (player == null)
             return;
         player.Hp -= 15;
-        UIManger.instance.ShowNotiText($"Hurt -15 \nHP: {player.Hp}");
+        UiManager.Instance.ShowNotiText($"Hurt -15 \nHP: {player.Hp}");
 
         if (player.Hp <= 0)
         {
             player.Hp = 0;
-            UIManger.instance.ShowNotiText($"You are dead!\nPoints: {player.Point}");
+            UiManager.Instance.ShowNotiText($"You are dead!\nPoints: {player.Point}");
             Time.timeScale = 0f;
-            UIManger.instance.ShowHideRestartButton(true);
+            UiManager.Instance.ShowHideRestartButton(true);
         }
     }
     private void OnCollisionExit(Collision collision)

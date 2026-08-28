@@ -10,7 +10,7 @@ public class Flag : MonoBehaviour
 
         p.Point += 10;
 
-        UIManger.instance.ShowNotiText($"+10 points\nPoints: {p.Point}");
+        UiManager.Instance.ShowNotiText($"+10 points\nPoints: {p.Point}");
         Destroy(gameObject);
     }
 }
